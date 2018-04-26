@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/lan_item"
+        android:title="Language" >
+        <menu>
+            <item android:id="@+id/ind_item"
+                android:title="Bahasa Indonesia"/>
+            <item android:id="@+id/eng_item"
+                android:title="English"/>
+        </menu>
+    </item>
+    <item android:id="@+id/age_item"
+        android:title="Age of local data"/>
+</menu>

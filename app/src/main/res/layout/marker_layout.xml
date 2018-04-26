@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="200dp"
+    android:layout_height="80dp"
+    android:gravity="center_vertical"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp">
+        <TextView
+            android:id="@+id/map_client_name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Guntur"
+            android:textSize="20dp"
+            android:layout_marginLeft="15dp"
+            android:textColor="@color/black"
+            android:gravity="center_vertical"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingEnd="15dp"
+        android:paddingStart="15dp">
+
+        <ImageView
+            android:id="@+id/sync_map_state_imageview"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:background="@drawable/online_background" />
+
+        <TextView
+            android:id="@+id/current_map_time_textview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical"
+            android:text="15 jan 2018 23:12:34"
+            android:textColor="@color/black" />
+    </LinearLayout>
+</LinearLayout>

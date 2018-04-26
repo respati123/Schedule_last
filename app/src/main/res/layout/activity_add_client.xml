@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+    tools:context="com.android.victory.schedule.activity.AddScheduleActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:orientation="vertical"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:layout_centerInParent="true"
+        android:weightSum="9">
+
+        <EditText
+            android:id="@+id/client_code_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:hint="Client Code"
+            android:textAlignment="center"
+            android:background="@drawable/bg_textfield"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="1"/>
+        <EditText
+            android:id="@+id/client_name_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:hint="Client Name"
+            android:textAlignment="center"
+            android:background="@drawable/bg_textfield"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="1"/>
+        <EditText
+            android:id="@+id/pic_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:hint="PIC"
+            android:textAlignment="center"
+            android:background="@drawable/bg_textfield"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="1"/>
+        <EditText
+            android:id="@+id/phone_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:hint="Phone"
+            android:textAlignment="center"
+            android:background="@drawable/bg_textfield"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="1"/>
+        <EditText
+            android:id="@+id/hp_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:hint="HP"
+            android:textAlignment="center"
+            android:background="@drawable/bg_textfield"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="1"/>
+        <EditText
+            android:id="@+id/address_edittext"
+            android:inputType="textMultiLine"
+            android:lines="3"
+            android:minLines="3"
+            android:maxLines="6"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:layout_width="match_parent"
+            android:scrollbars="vertical"
+            android:hint="Address"
+            android:textAlignment="center"
+            android:background="@drawable/bg_textfield"/>
+
+    </LinearLayout>
+</RelativeLayout>

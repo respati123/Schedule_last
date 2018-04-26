@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+    tools:context="com.android.victory.schedule.activity.AddScheduleActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:layout_gravity="center"
+            android:weightSum="10">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:orientation="horizontal"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1"
+                android:weightSum="1">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.2"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/black"
+                    android:text="Salesman"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:layout_weight="0.1"
+                    android:textColor="@color/black"
+                    android:text=" : "/>
+                <Spinner
+                    android:id="@+id/sales_spinner"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:layout_weight="0.7"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:orientation="horizontal"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1"
+                android:weightSum="1">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.2"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/black"
+                    android:text="Client"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:layout_weight="0.1"
+                    android:text=" : "/>
+                <Spinner
+                    android:id="@+id/client_spinner"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="10dp"
+                    android:layout_weight="0.7" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:orientation="horizontal"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1"
+                android:weightSum="1">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.2"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/black"
+                    android:text="Job"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:layout_weight="0.1"
+                    android:textColor="@color/black"
+                    android:text=" : "/>
+                <Spinner
+                    android:id="@+id/job_spinner"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="10dp"
+                    android:layout_weight="0.7" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:orientation="horizontal"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1"
+                android:weightSum="1">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.2"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/black"
+                    android:text="Service"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:layout_weight="0.1"
+                    android:textColor="@color/black"
+                    android:text=" : "/>
+                <Spinner
+                    android:id="@+id/service_spinner"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="10dp"
+                    android:layout_weight="0.7" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_marginBottom="10dp"
+                android:textStyle="bold"
+                android:drawableRight="@drawable/ic_action_go_to_today"
+                android:background="@drawable/bg_textfield"
+                android:hint="Click DATE "
+                android:text=""
+                android:id="@+id/textDate" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:drawableRight="@drawable/ic_action_time"
+                android:background="@drawable/bg_textfield"
+                android:layout_marginBottom="10dp"
+                android:textStyle="bold"
+                android:hint="Click TIME "
+                android:text=""
+                android:id="@+id/textTime" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:orientation="horizontal"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1"
+                android:weightSum="1">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.2"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/black"
+                    android:text="To Meet"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:layout_weight="0.1"
+                    android:textColor="@color/black"
+                    android:text=" : "/>
+                <EditText
+                    android:id="@+id/meet_edittext"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/bg_textfield"
+                    android:layout_weight="0.7"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:orientation="horizontal"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="3"
+                android:weightSum="1">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.2"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/black"
+                    android:text="Need Desc"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:layout_weight="0.1"
+                    android:textColor="@color/black"
+                    android:text=" : "/>
+                <EditText
+                    android:id="@+id/desc_edittext"
+                    android:inputType="textMultiLine"
+                    android:lines="3"
+                    android:minLines="3"
+                    android:maxLines="6"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.7"
+                    android:layout_width="0dp"
+                    android:scrollbars="vertical"
+                    android:background="@drawable/bg_textfield"/>
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+
+
+</RelativeLayout>

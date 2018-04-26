@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_schedule"
+            android:icon="@drawable/schedule_icon_background"
+            android:title="Schedule" />
+        <item
+            android:id="@+id/nav_week"
+            android:icon="@drawable/schedule_icon_background"
+            android:title="Week" />
+
+        <item
+            android:id="@+id/nav_month"
+            android:icon="@drawable/schedule_icon_background"
+            android:title="Month" />
+
+        <item android:id="@+id/nav_switch"
+            android:icon="@drawable/schedule_icon_background"
+            app:actionLayout="@layout/action_view_switch"
+            android:title="Missing Employee" />
+        <item
+            android:id="@+id/nav_download"
+            android:icon="@drawable/schedule_icon_background"
+            android:title="Download" />
+        <item
+            android:id="@+id/nav_upload"
+            android:icon="@drawable/schedule_icon_background"
+            android:title="Upload" />
+
+    </group>
+
+    <item android:title="Client">
+        <menu>
+
+        </menu>
+    </item>
+
+</menu>

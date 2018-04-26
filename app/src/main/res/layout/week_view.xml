@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/linPreviousWeek"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:src="@drawable/ic_keyboard_arrow_left_black_24dp" />
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/tvDateDetails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            android:text="Dec 2015"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:id="@+id/linNextWeek"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:src="@drawable/ic_keyboard_arrow_right_black_24dp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvSundayTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/date_title_sunday"
+                android:textColor="@color/red_light"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tvSundayDate"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:padding="3dp"
+                android:text="0"
+                android:textColor="@color/red_light"
+                android:textSize="12sp" />
+
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:divider="@null"
+                android:dividerHeight="3dp"
+                android:scrollingCache="true"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:listSelector="@android:color/transparent"
+                android:cacheColorHint="@android:color/transparent"
+                android:id="@+id/client_sunday_listview" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvMondayDateTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/date_title_monday"
+                android:textColor="@android:color/black"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tvMondayDate"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:padding="3dp"
+                android:text="0"
+                android:textColor="@android:color/black"
+                android:textSize="12sp" />
+
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:divider="@null"
+                android:dividerHeight="3dp"
+                android:scrollingCache="true"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:listSelector="@android:color/transparent"
+                android:cacheColorHint="@android:color/transparent"
+                android:id="@+id/client_monday_listview" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvTuesdayDateTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/date_title_tuesday"
+                android:textColor="@android:color/black"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tvTuesdayDate"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:padding="3dp"
+                android:text="0"
+                android:textColor="@android:color/black"
+                android:textSize="12sp" />
+
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:divider="@null"
+                android:dividerHeight="3dp"
+                android:scrollingCache="true"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:listSelector="@android:color/transparent"
+                android:cacheColorHint="@android:color/transparent"
+                android:id="@+id/client_tuesday_listview" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvWednesdayDateTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/date_title_wednesday"
+                android:textColor="@android:color/black"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tvWednesdayDate"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:padding="3dp"
+                android:text="0"
+                android:textColor="@android:color/black"
+                android:textSize="12sp" />
+
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:divider="@null"
+                android:dividerHeight="3dp"
+                android:scrollingCache="true"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:listSelector="@android:color/transparent"
+                android:cacheColorHint="@android:color/transparent"
+                android:id="@+id/client_wednesday_listview" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvThursdayDateTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/date_title_thursday"
+                android:textColor="@android:color/black"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tvThursdayDate"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:padding="3dp"
+                android:text="0"
+                android:textColor="@android:color/black"
+                android:textSize="12sp" />
+
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:divider="@null"
+                android:dividerHeight="3dp"
+                android:scrollingCache="true"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:listSelector="@android:color/transparent"
+                android:cacheColorHint="@android:color/transparent"
+                android:id="@+id/client_thursday_listview" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvFridayDateTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/date_title_friday"
+                android:textColor="@android:color/black"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tvFridayDate"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:padding="3dp"
+                android:text="0"
+                android:textColor="@android:color/black"
+                android:textSize="12sp" />
+
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:divider="@null"
+                android:dividerHeight="3dp"
+                android:scrollingCache="true"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:listSelector="@android:color/transparent"
+                android:cacheColorHint="@android:color/transparent"
+                android:id="@+id/client_friday_listview" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvSaturdayDateTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/date_title_saturday"
+                android:textColor="@android:color/black"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tvSaturdayDate"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:padding="3dp"
+                android:text="0"
+                android:textColor="@android:color/black"
+                android:textSize="12sp" />
+
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:divider="@null"
+                android:dividerHeight="3dp"
+                android:scrollingCache="true"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:listSelector="@android:color/transparent"
+                android:cacheColorHint="@android:color/transparent"
+                android:id="@+id/client_saturday_listview" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

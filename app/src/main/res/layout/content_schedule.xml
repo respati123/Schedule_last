@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="?attr/actionBarSize">
+
+    <com.android.victory.schedule.activity.CustomCalendarView.CustomCalendar
+        android:id="@+id/calendarview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        app:cellSize="70" />
+    <com.android.victory.schedule.activity.CustomCalendarView.CustomWeekCalendar
+        android:id="@+id/calendar_weekview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"/>
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:divider="@null"
+        android:dividerHeight="3dp"
+        android:scrollingCache="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:listSelector="@android:color/transparent"
+        android:cacheColorHint="@android:color/transparent"
+        android:id="@+id/client_schedule_listview"
+        android:padding="10dp"/>
+</android.support.design.widget.CoordinatorLayout>

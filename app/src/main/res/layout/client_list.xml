@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:orientation="horizontal"
+    android:weightSum="1">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/client_photo"
+        android:layout_width="40dp"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp"
+        android:background="@drawable/user_img"
+        />
+    <TextView
+        android:id="@+id/client_name"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.7"
+        android:text="Guntur"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:textColor="@color/black"/>
+
+</LinearLayout>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.android.victory.schedule.activity.MainActivity"
+    tools:showIn="@layout/app_bar_main"
+    android:background="@drawable/back">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp">
+        <ImageView
+            android:id="@+id/sync_state_imageview"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:background="@drawable/online_background"/>
+        <TextView
+            android:id="@+id/current_time_textview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/black"
+            android:text="15 jan 2018 23:12:34"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:layout_marginTop="70dp"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="240dp"
+            android:layout_height="120dp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+            <ImageView
+                android:id="@+id/schedule_imageview"
+                android:layout_width="100dp"
+                android:layout_height="120dp"
+                android:background="@drawable/schedule"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:gravity="center"
+            android:layout_marginTop="40dp">
+
+            <ImageView
+                android:id="@+id/monitor_imageivew"
+                android:layout_width="100dp"
+                android:layout_height="120dp"
+                android:background="@drawable/monitor"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:gravity="center"
+            android:layout_marginTop="40dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="asdasd" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
